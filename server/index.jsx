@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect("mongodb://localhost:27017/crud")
+mongoose.connect("mongodb+srv://praveenvirat18100:praveen2003@cluster-news.djxpjuz.mongodb.net/crud-app?retryWrites=true&w=majority&appName=Cluster-News")
 .then(() => console.log("Mongodb Connected Sucessfully"))
 .catch((err) => console.log("Mongodb Connection error",err));
 
