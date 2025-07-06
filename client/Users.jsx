@@ -7,7 +7,7 @@ function Users() {
     
 
     useEffect(() => {
-        axios.get('https://apk-crud-api.vercel.app')
+        axios.get('https://apk-crud-api.vercel.app/')
         .then(result => setUsers(result.data))
         .catch(err => console.log(err))
     },[])
