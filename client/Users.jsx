@@ -7,13 +7,13 @@ function Users() {
     
 
     useEffect(() => {
-        axios.get('http://localhost:3001')
+        axios.get('https://apk-crud-api.vercel.app')
         .then(result => setUsers(result.data))
         .catch(err => console.log(err))
     },[])
 
     const handleDelete = (id) => {
-        axios.delete('http://localhost:3001/deleteUser/'+id)
+        axios.delete('https://apk-crud-api.vercel.app/deleteUser/'+id)
         .then(res => {
             console.log(res)
             window.location.reload()})
